@@ -1,0 +1,108 @@
+{% extends "_base.html" %}
+{% set titulek = 'SK GASTRO – domáce knedle a parené buchty, Kysucké Nové Mesto' %}
+{% set cesta = '' %}
+{% set tel = '+421' ~ (site.kontakt.telefon|replace(' ', ''))[1:] %}
+{% set b = data.ponuka.buchty %}
+{% block obsah %}
+<section class="uvod">
+  <div class="wrap uvod-in">
+    <p class="miesto">Kysucké Nové Mesto</p>
+    <h1>Domáce knedle a&nbsp;parené buchty</h1>
+    <figure class="uvod-foto">
+      {{ img(b.foto, b.alt, sizes='(min-width: 64rem) 36rem, 92vw') }}
+      <figcaption class="etiketa nalep"><span class="et-firma">SK GASTRO · domáca výroba</span><strong>{{ b.nazev }}</strong><span class="et-riadok"><span>{{ b.balenie }}, 5 druhov</span><span class="cena">od {{ b.druhy[0].cena }}</span></span></figcaption>
+    </figure>
+    <p class="perex">{{ data.odber.uvod }} Balíme ich s&nbsp;etiketou a&nbsp;gramážou, pre domácnosti aj pre reštaurácie a&nbsp;obchody.</p>
+    <div class="akcie">
+      <a class="btn btn-zlata" href="#ponuka">Ponuka a ceny</a>
+      <a class="btn btn-linka" href="tel:{{ tel }}">Zavolať {{ site.kontakt.telefon }}</a>
+    </div>
+  </div>
+</section>
+
+<section class="ponuka" id="ponuka">
+  <div class="wrap">
+    <header class="sekcia-hlava">
+      <h2>Ponuka</h2>
+      <p>Každý výrobok balíme zvlášť a&nbsp;označujeme etiketou so zložením a&nbsp;alergénmi. Ceny sú za balenie.</p>
+    </header>
+    <ul class="vyrobky" role="list">
+      <li class="vyrobok vyrobok-cennik">
+        <div class="etiketa etiketa-cennik">
+          <span class="et-firma">SK GASTRO · domáca výroba</span>
+          <h3>{{ b.nazev }} <span class="kusy">{{ b.balenie }}</span></h3>
+          <ul class="cennik" role="list">
+            {% for d in b.druhy %}<li><span>{{ d.nazev }}</span><span class="bodky" aria-hidden="true"></span><span class="cena">{{ d.cena }}</span></li>{% endfor %}
+          </ul>
+        </div>
+      </li>
+      {% for v in data.ponuka.vyrobky %}
+      <li class="vyrobok">
+        <div class="vyrobok-foto">{{ img(v.foto, v.alt, sizes='(min-width: 64rem) 24rem, (min-width: 40rem) 46vw, 92vw') }}</div>
+        <div class="etiketa nalep">
+          <h3>{{ v.nazev }}</h3>
+          <span class="et-riadok"><span>{{ v.balenie }}</span>{% if v.cena %}<span class="cena">{{ v.cena }}</span>{% else %}<span class="doplnime">cenu doplníme</span>{% endif %}</span>
+          {% if v.streda is defined %}<span class="et-streda">v stredu, {{ v.streda }}</span>{% endif %}
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>
+
+<section class="streda" aria-labelledby="streda-h">
+  <div class="wrap streda-in">
+    <h2 id="streda-h">Šišky a&nbsp;langoše robíme vždy v&nbsp;stredu</h2>
+    <dl class="streda-tyzdne">
+      <div data-parita="0"><dt>Párny týždeň</dt><dd>šišky s&nbsp;džemom</dd></div>
+      <div data-parita="1"><dt>Nepárny týždeň</dt><dd>langoše s&nbsp;cesnakom</dd></div>
+    </dl>
+    <p class="streda-teraz" hidden></p>
+  </div>
+</section>
+
+<section class="odber" id="odber">
+  <div class="wrap odber-in">
+    <div class="odber-text">
+      <h2>Pre odberateľov</h2>
+      <p class="perex">{{ data.odber.uvod_odber }}</p>
+      <ul class="dodaci" role="list">
+        {% for r in data.odber.pre %}<li><span class="check" aria-hidden="true"></span>{{ r }}</li>{% endfor %}
+      </ul>
+      <div class="akcie">
+        <a class="btn btn-zlata" href="#kontakt">Dohodnúť odber</a>
+        <a class="btn btn-linka" href="tel:{{ tel }}">{{ site.kontakt.telefon }}</a>
+      </div>
+    </div>
+    <aside class="dodaci-list" aria-labelledby="dl-h">
+      <span class="et-firma">SK GASTRO · pre odberateľov</span>
+      <h3 id="dl-h">{{ data.odber.peciatka }}</h3>
+      <p>{{ data.odber.text }} {{ data.odber.vyzva }}</p>
+      <table>
+        <thead><tr><th scope="col">Výrobok</th><th scope="col">Balenie</th></tr></thead>
+        <tbody>
+          <tr><td>Parené buchty (5 druhov)</td><td>{{ b.balenie }}</td></tr>
+          {% for v in data.ponuka.vyrobky %}<tr><td>{{ v.nazev }}</td><td>{{ v.balenie }}</td></tr>{% endfor %}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<section class="kontakt" id="kontakt">
+  <div class="wrap kontakt-in">
+    <div class="kontakt-udaje">
+      <h2>Kontakt a&nbsp;objednávky</h2>
+      <dl>
+        <div><dt>Adresa</dt><dd><a href="{{ site.mapa }}" rel="noopener" target="_blank">{{ site.kontakt.adresa.ulice }}<br>{{ site.kontakt.adresa.psc }} {{ site.kontakt.adresa.mesto }}</a></dd></div>
+        <div><dt>Telefón</dt><dd><a href="tel:{{ tel }}">{{ site.kontakt.telefon }}</a></dd></div>
+        <div><dt>E-mail</dt><dd><a href="mailto:{{ site.kontakt.email }}">{{ site.kontakt.email }}</a></dd></div>
+      </dl>
+    </div>
+    <div class="kontakt-form">
+      <h3>Napíšte nám, čo a koľko</h3>
+      {% include "_formular.html" %}
+    </div>
+  </div>
+</section>
+{% endblock %}

@@ -1,0 +1,16 @@
+{
+  "znamka": 8,
+  "slabiny": [
+    "Nadpisy hero, Šišky a langoše a Kontakt a objednávky (PC i 390 px): spojka „a“ zůstává sama na konci řádku („knedle a / parené“, „Kontakt a / objednávky“). Mezi „a“ a následující slovo dát v h1/h2 nbsp, aby šla spojka na nový řádek.",
+    "Mezery mezi sekcemi na PC (pod žlutým pruhem Šišky a langoše před Pre odberateľov a pod kartou odberatelů před Kontaktem) i na mobilu (pod tlačítkem Zavolať v hero před Ponukou) jsou prázdné tmavé plochy kolem 200 px bez obsahu, takže stránka působí nedodělaně. Sjednotit padding sekcí podle jednoho systému, zhruba na polovinu, a tmavé sekce oddělit tenkou zlatou linkou, ať rytmus drží.",
+    "Karta „INDIVIDUÁLNE CENY PODĽA ODBERU“ v sekci Pre odberateľov jen opakuje balení z Ponuky a jako jediná má nadpis verzálkami, což se k ostatním h2 nehodí. Tabulku balení zrušit a nadpis přepsat malými písmeny jako zbytek webu. Do karty dát velkou fotku zabalených výrobků s etiketou (třeba buchty.png) a krátký text o cenové nabídce na míru s tlačítkem Dohodnúť odber, aby to byl jeden jasný fokus."
+  ],
+  "silne": [
+    "Koncept etikety se drží celé stránky: krémové štítky s gramáží, cenou a „SK GASTRO · domáca výroba“ vycházejí z reálných etiket na fotkách klienta. Najdeš je v hero, v ponuce, v kartě pro odběratele i ve formuláři.",
+    "Černá se zlatou má oporu v briefu, klient ji výslovně chtěl („do čiernej a zlatej ako mám logo“). Logo zatím nedodal, takže je v hlavičce vlevo textem SK GASTRO.",
+    "Obsah sedí na fakta z briefu: ceny, balení, rozpis šišek a langošů po týdnech i adresa. Chybějící cenu palačinek označuje štítek „cenu doplníme“, nic není vymyšlené.",
+    "Jedna rodina písma (Archivo, nadpisy v široké variantě), slovenská diakritika se kreslí správně, hierarchie je jasná.",
+    "Konverze je jasná: telefon je v hlavičce, v hero, u odběratelů, v kontaktu i v patičce. Formulář se ptá, co a kolik zákazník chce. Na mobilu je pořadí nadpis → fotka → text → CTA, QA nenašlo přetečení ani malé dotykové cíle."
+  ],
+  "verdikt": "Poctivý web postavený na fotkách a etiketách klienta, s barvami, které klient sám chtěl. Po opravě osamocených spojek a zkrácení prázdných mezer mezi sekcemi ho lze klientovi odeslat."
+}

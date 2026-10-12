@@ -1,0 +1,74 @@
+{
+  "buchty": {
+    "nazev": "Parené buchty",
+    "balenie": "6 ks",
+    "foto": "buchty.png",
+    "alt": "Šesť parených buchiet v balení na drevenej doske",
+    "druhy": [
+      {
+        "nazev": "Slivkové",
+        "cena": "3,70 €"
+      },
+      {
+        "nazev": "Marhuľové",
+        "cena": "3,70 €"
+      },
+      {
+        "nazev": "Jahodové",
+        "cena": "3,70 €"
+      },
+      {
+        "nazev": "Čučoriedkové",
+        "cena": "3,90 €"
+      },
+      {
+        "nazev": "S nutellou",
+        "cena": "3,90 €"
+      }
+    ]
+  },
+  "vyrobky": [
+    {
+      "nazev": "Knedľa",
+      "balenie": "600 g",
+      "cena": "2,90 €",
+      "foto": "knedla.png",
+      "alt": "Knedľa 600 g zabalená vo fólii na drevenej doske",
+      "tvar": "vyska"
+    },
+    {
+      "nazev": "Zemiaková placka",
+      "balenie": "1 ks · 180 g",
+      "cena": "1,90 €",
+      "foto": "placka.png",
+      "alt": "Zemiaková placka v balení s etiketou",
+      "tvar": "sirka"
+    },
+    {
+      "nazev": "Palacinky s nutellou",
+      "balenie": "3 ks",
+      "cena": "",
+      "foto": "palacinky.png",
+      "alt": "Tri palacinky s nutellou na tácke",
+      "tvar": "sirka"
+    },
+    {
+      "nazev": "Langoše s cesnakom",
+      "balenie": "3 ks",
+      "cena": "4,95 €",
+      "foto": "langose.png",
+      "alt": "Tri langoše s cesnakom v balení",
+      "tvar": "sirka",
+      "streda": "nepárny týždeň"
+    },
+    {
+      "nazev": "Šišky s džemom",
+      "balenie": "6 ks",
+      "cena": "4,95 €",
+      "foto": "sisky.jpg",
+      "alt": "Šesť šišiek s džemom v balení",
+      "tvar": "sirka",
+      "streda": "párny týždeň"
+    }
+  ]
+}

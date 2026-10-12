@@ -1,0 +1,102 @@
+{
+ "slug": "sk-gastro",
+ "zdroj_url": null,
+ "firma": "SK GASTRO",
+ "obor": [
+  "domáca výroba: knedle, parené buchty, zemiakové placky, šišky, langoše, palacinky",
+  "predaj jednotlivcom aj odberateľom (reštaurácie, jedálne, večierky, potraviny, obchody)"
+ ],
+ "mesto": "Kysucké Nové Mesto",
+ "jazyk": "sk",
+ "prevadzkovatel": "SK - cars for all s.r.o. (etiketa palaciniek na fotke klienta; IČO neoverené)",
+ "ico": "",
+ "ares": null,
+ "kontakty": {
+  "telefon": "0908 510 827",
+  "email": "skgastro82@gmail.com",
+  "adresa": "Matice Slovenskej 621/1A, 024 01 Kysucké Nové Mesto"
+ },
+ "ton": "jednoduchý, domácky, priamy; klient píše krátko; s varením (obedy) končí – žiadne zmienky o varení ani reštaurácii",
+ "logo": null,
+ "barvy": {
+  "cierna": "#121110",
+  "zlata": "#C9A24B",
+  "papier etikety": "#F6F1E6",
+  "poznamka": "klient: 'celú stránku by som dal do čiernej a zlatej ako mám logo' (mail 12. 10. 19:09); logo neposlal"
+ },
+ "fotky": [
+  {
+   "subor": "img/buchty.png",
+   "rozlisenie": "1024x1536",
+   "zdroj": "mail klienta 12. 10. 19:09"
+  },
+  {
+   "subor": "img/knedla.png",
+   "rozlisenie": "1024x1536",
+   "zdroj": "mail klienta 12. 10."
+  },
+  {
+   "subor": "img/placka.png",
+   "rozlisenie": "1450x1085",
+   "zdroj": "mail klienta 12. 10."
+  },
+  {
+   "subor": "img/palacinky.png",
+   "rozlisenie": "1449x1086",
+   "zdroj": "mail klienta 12. 10."
+  },
+  {
+   "subor": "img/langose.png",
+   "rozlisenie": "1536x1024",
+   "zdroj": "mail klienta 12. 10."
+  },
+  {
+   "subor": "img/sisky.jpg",
+   "rozlisenie": "4640x3472 (zmenšené na 2000)",
+   "zdroj": "mail klienta 12. 10."
+  }
+ ],
+ "fakta": [
+  {
+   "fakt": "Ponúkame kvalitné domáce knedle a parené buchty, čerstvo pripravené s dôrazom na kvalitu a chuť. Pre reštaurácie a jedálne; pre večierky a potraviny; pre obchody a ďalších odberateľov. Individuálne ceny podľa odberu. Pri pravidelnom alebo väčšom odbere cenová ponuka na mieru.",
+   "zdroj": "mail klienta 12. 10. 19:58 (UID 11504)"
+  },
+  {
+   "fakt": "Ceny: knedľa 600 g 2,90 €; buchty slivkové, marhuľové, jahodové 3,70 €; nutella, čučoriedka 3,90 €; placka 1,90 €; langoše a šišky 4,95 €",
+   "zdroj": "mail klienta 12. 10. 19:58 (UID 11504)"
+  },
+  {
+   "fakt": "Balenia: parené buchty 6 ks, langoše s cesnakom 3 ks, šišky s džemom 6 ks, placka 1 ks",
+   "zdroj": "cenník klienta v prílohe 3. 10. (UID 7937) + etikety na fotkách"
+  },
+  {
+   "fakt": "Zemiaková placka 180 g",
+   "zdroj": "etiketa na fotke placka.png"
+  },
+  {
+   "fakt": "Palacinky s nutellou 3 ks",
+   "zdroj": "etiketa na fotke palacinky.png; mail 12. 10. 19:53 'v celkovej ponuke sú … palacinky'"
+  },
+  {
+   "fakt": "Šišky a langoše robíme vždy v stredu, párny týždeň šišky, nepárny týždeň langoše",
+   "zdroj": "cenník klienta 3. 10. (UID 7937)"
+  },
+  {
+   "fakt": "Adresa Matice Slovenskej 621/1A, 024 01 Kysucké Nové Mesto; telefón 0908510827",
+   "zdroj": "maily klienta 12. 10. 19:09 a 19:53"
+  },
+  {
+   "fakt": "S varením končia – text o varení odstrániť",
+   "zdroj": "mail klienta 12. 10. 19:53 (UID 11500)"
+  }
+ ],
+ "chybi": [
+  "logo v dobrej kvalite (čierno-zlaté, ideálne PDF/SVG alebo väčší obrázok)",
+  "cena palaciniek s nutellou (3 ks)",
+  "knedľa 900 g – ostáva v ponuke? (v novom cenníku nie je)",
+  "otváracie hodiny / kedy si možno tovar vyzdvihnúť",
+  "alergény k výrobkom (sú na etiketách, potrebujeme ich prepísať)",
+  "doména"
+ ],
+ "_poznamka": "Vyplnené ručne 12. 10. 2026, úloha Karolíny #435."
+}

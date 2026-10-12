@@ -1,0 +1,49 @@
+{
+  "slug": "sk-gastro",
+  "nazev": "SK GASTRO",
+  "url": "https://webhunter-navrhy.github.io/sk-gastro/",
+  "base": "/sk-gastro/",
+  "lang": "sk",
+  "popis": "Domáce knedle, parené buchty, zemiakové placky, šišky, langoše a palacinky z Kysuckého Nového Mesta. Pre domácnosti aj reštaurácie, jedálne a obchody.",
+  "navrh": true,
+  "domena": "",
+  "og_image": "buchty.png",
+  "logo": "",
+  "theme_color": "#121110",
+  "typ": "FoodEstablishment",
+  "ico": "",
+  "kontakt": {
+    "email": "skgastro82@gmail.com",
+    "telefon": "0908 510 827",
+    "adresa": {
+      "ulice": "Matice Slovenskej 621/1A",
+      "psc": "024 01",
+      "mesto": "Kysucké Nové Mesto",
+      "zeme": "SK"
+    }
+  },
+  "oteviraci_doba": [],
+  "sameas": [],
+  "cenove_rozpeti": "1,90 € – 4,95 €",
+  "formular": {
+    "endpoint": "",
+    "demo": true,
+    "predmet": "Objednávka z webu SK GASTRO"
+  },
+  "nav": [
+    {
+      "text": "Ponuka",
+      "href": "#ponuka"
+    },
+    {
+      "text": "Pre odberateľov",
+      "href": "#odber"
+    },
+    {
+      "text": "Kontakt",
+      "href": "#kontakt"
+    }
+  ],
+  "prevadzkovatel": "SK - cars for all s.r.o.",
+  "mapa": "https://www.google.com/maps/search/?api=1&query=Matice+Slovenskej+621%2F1A%2C+024+01+Kysuck%C3%A9+Nov%C3%A9+Mesto"
+}

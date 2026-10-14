@@ -188,6 +188,8 @@ p{text-wrap:pretty;max-width:62ch}
 @media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
 .kontakt dd a{display:inline-block;padding:.45rem 0}
 .rozvoz{margin:0 0 1.2rem;line-height:1.6}
-.logo-blok{display:flex;flex-direction:column;align-items:flex-start;gap:0;min-width:0}
-.logo-mesta{display:flex;flex-direction:column;font-size:.8rem;line-height:1.3;letter-spacing:.08em;text-transform:uppercase;color:var(--zlata,#d9a93a);margin-top:.35rem;padding-bottom:.25rem;border-bottom:2px solid currentColor;white-space:nowrap}
-@media (max-width:26rem){.logo-mesta{font-size:.72rem}}
+.logo-blok{display:flex;flex-direction:row;align-items:center;gap:.9rem;min-width:0}
+.logo-mesta{display:flex;flex-direction:row;flex-wrap:nowrap;gap:.35rem .6rem;font-size:.78rem;line-height:1.2;letter-spacing:.08em;text-transform:uppercase;color:var(--zlata,#d9a93a);padding-left:.9rem;border-left:2px solid currentColor;white-space:nowrap;max-height:calc(var(--hlavicka) - .8rem);overflow:hidden}
+.logo-mesta span+span::before{content:"·";margin-right:.6rem}
+@media (max-width:60rem){.logo-mesta{flex-direction:column;gap:0;font-size:.62rem;line-height:1.25;padding-left:.6rem}.logo-mesta span+span::before{content:none}}
+@media (max-width:26rem){.logo-blok{gap:.5rem}.logo-mesta{font-size:.56rem;letter-spacing:.04em}}
